@@ -34,7 +34,7 @@ server.post('/get-movie-details', (req, res) => {
             return res.json({
                 fulfillmentText: 'This is a text response',
                 fulfillmentMessages: [
-                  { text: [dataToSend] }
+                  { text: {text: [dataToSend]}}
                 ],
                 source: 'get-movie-details',
                 payload: {
