@@ -1,0 +1,24 @@
+{
+  "name": "ideanbotwebhooktest",
+  "version": "1.0.0",
+  "description": "individualTest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colorfulAngel/dialogFlowTestAPI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colorfulAngel/dialogFlowTestAPI/issues"
+  },
+  "homepage": "https://github.com/colorfulAngel/dialogFlowTestAPI#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "newsapi": "^2.4.0"
+  }
+}
