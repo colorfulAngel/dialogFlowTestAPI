@@ -26,10 +26,23 @@ router.post('/', (req, res) => {
 	console.log('intent:',intent);
 	
 	if(intent == 'Response Helpful Intent - yes'){
-		res.send('Thank you for your help and hope you enjoy using it.');
+		
+		return res.json({
+			fulfillmentText: 'This is a text response',
+                fulfillmentMessages: [
+                  { text: {text: ['Thank you for your help and hope you enjoy using it.']}}
+                ],
+                source: 'get-movie-details'
+		});
 	}
 	else if(intent == 'Response Helpful Intent - no'){
-		res.send('We\'ll working hard to improve it!');
+		return res.json({
+			fulfillmentText: 'This is a text response',
+                fulfillmentMessages: [
+                  { text: {text: ['We\'ll working hard to improve it!']}}
+                ],
+                source: 'get-movie-details'
+		});
 	}
 	else {
 		getMovie(req, res);
